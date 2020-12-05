@@ -34,3 +34,14 @@ nav {
   color: black;
 }
 
+.image-container{
+  background: url(./images/Hero.png);
+  width: 100%;
+  background-size: cover;
+  height: 32rem;
+  background-repeat: no-repeat;
+}
+
+.image-central-text{
+  margin-left: 7rem;
+}
