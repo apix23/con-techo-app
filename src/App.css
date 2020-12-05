@@ -178,7 +178,7 @@ select:focus {
 
 /*-------------  Checkmark cards -------------*/
 
-.checkmarks-card {
+.checkmarks-card, .shadow-and-border-radius {
   box-shadow: 1px 2px 15px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -189,4 +189,40 @@ select:focus {
 
 .checkmarks-card p img {
   margin-right: 10px;
+}
+
+
+/*----------------- Contact Forms -----------------*/
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+}
+
+.contact-form .form-check label {
+  font-weight: bold;
+}
+
+.contact-form .form-group label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form input.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-form .alert-success {
+  color: #398714;
+  font-weight: bold;
+}
+
+.contact-form a {
+  font-weight: normal;
+  text-decoration: underline;
+  color: black;
 }
