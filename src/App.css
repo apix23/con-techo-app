@@ -45,3 +45,25 @@ nav {
 .image-central-text{
   margin-left: 7rem;
 }
+
+section.information-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5rem;
+}
+
+.section-paragrah{
+  margin-top: 1.5rem;
+}
+
+section.information-setion p, h3{
+  text-align: center;
+}
+
+.search-menu{
+  background: #05518D;
+  height: 91px;
+  width: 793px;
+  border-radius: 5px;
+}
