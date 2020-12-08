@@ -1,25 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'DM sans', serif;
+  font-family: "DM sans", serif;
 }
 
 .orange-button {
   height: 40px;
   padding: 0 30px;
-  background: #EC6933;
-  border: 2px solid #EC6933;
+  background: #ec6933;
+  border: 2px solid #ec6933;
   box-sizing: border-box;
   border-radius: 5px;
   color: white;
 }
 
 .contact-us-button {
-  border: 2px solid #05518D;
+  border: 2px solid #05518d;
   box-sizing: border-box;
   border-radius: 5px;
-  color: #05518D;
+  color: #05518d;
   padding: 0 24px;
   height: 40px;
   margin-right: 21px;
@@ -27,10 +27,20 @@
 
 nav {
   height: 79px;
-  background-color: #C0E0FF;
+  background-color: #c0e0ff;
 }
 
-.navbar-nav a.nav-link   {
+.navbar-nav a.nav-link {
   color: black;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+.carousel-inner {
+  height: 900px;
+  width: 900px;
+  border-radius: 5px;
+}
