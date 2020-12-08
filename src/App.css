@@ -1,8 +1,18 @@
 * {
-  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
   box-sizing: border-box;
   font-family: "DM sans", serif;
+}
+
+body {
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .orange-button {
@@ -44,3 +54,21 @@ nav {
   width: 900px;
   border-radius: 5px;
 }
+
+.estiloP {
+  text-align: left;
+}
+
+.MostLittle {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  float: right;
+  margin-top: 200px;
+}
+
+/* border: 1px solid black;
+  float: left;
+  height: 300px;
+  width: 300px;
+  #caja2  */

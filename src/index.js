@@ -10,9 +10,14 @@ import Characteristic from "./Characteristic";
 import Maps from "./Maps";
 import Credentials from "./Credentials";
 import SendContact from "./SendContact";
+import Dropdowns from "./Dropdowns";
+
 const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${Credentials.mapsKey}`;
 ReactDOM.render(
   <React.StrictMode>
+    <Dropdowns />
+    <SendContact />
+
     <App />
     <ShortDescription />
     <Description />
@@ -25,7 +30,6 @@ ReactDOM.render(
         loadingElement={<p>cargando</p>}
       />
     </div>
-    <SendContact />
   </React.StrictMode>,
   document.getElementById("root")
 );
