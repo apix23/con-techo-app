@@ -52,7 +52,11 @@ nav {
 .carousel-inner {
   height: 900px;
   width: 900px;
-  border-radius: 5px;
+  border-radius: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .estiloP {
@@ -72,3 +76,14 @@ nav {
   height: 300px;
   width: 300px;
   #caja2  */
+
+/* .carousel,
+.carousel-inner > .item > img {
+  margin-left: 0px;
+  margin-right: opx;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  height: 1000px;
+  width: 1000px;
+} */

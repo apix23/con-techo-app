@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
-import App from "./App";
+import Carousel from "./Carousel";
 import ShortDescription from "./ShortDescription";
 import Description from "./Description";
 import Characteristic from "./Characteristic";
@@ -18,7 +18,7 @@ ReactDOM.render(
     <Dropdowns />
     <SendContact />
 
-    <App />
+    <Carousel />
     <ShortDescription />
     <Description />
     <Characteristic />

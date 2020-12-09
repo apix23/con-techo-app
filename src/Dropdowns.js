@@ -1,29 +1,18 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { DropdownButton, Dropdown, ButtonGroup } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./App.css";
 
 const Dropdowns = () => (
   <>
-    {["Primary", "Secondary", "Success", "Info", "Warning", "Danger"].map(
-      (variant) => (
-        <DropdownButton
-          as={ButtonGroup}
-          key={variant}
-          id={`dropdown-variants-${variant}`}
-          variant={variant.toLowerCase()}
-          title={variant}
-        >
-          <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-          <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-          <Dropdown.Item eventKey="3" active>
-            Active Item
-          </Dropdown.Item>
-          <Dropdown.Divider />
-          <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-        </DropdownButton>
-      )
-    )}
+    <Button variant="outline-primary">Primary</Button>{" "}
+    <Button variant="outline-secondary">Secondary</Button>{" "}
+    <Button variant="outline-success">Success</Button>{" "}
+    <Button variant="outline-warning">Warning</Button>{" "}
+    <Button variant="outline-danger">Danger</Button>{" "}
+    <Button variant="outline-info">Info</Button>{" "}
+    <Button variant="outline-light">Light</Button>{" "}
+    <Button variant="outline-dark">Dark</Button>
   </>
 );
 
