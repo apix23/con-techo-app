@@ -26,6 +26,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'DM sans', serif;
+  z-index: 1;
 }
 
 h1 {
@@ -340,10 +341,12 @@ section.information-section h2, section.information-section h3{
 /* Social Impact Section  */
 
 .social-impact {
-  background-color: var(--blue);
+  background-color: var(--light-blue);
   color: white;
   text-align: center;
   padding: 50px 0 55px 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .social-impact-items-container {
@@ -355,6 +358,18 @@ section.information-section h2, section.information-section h3{
 .social-impact-items-container h1 {
   font-size: 100px;
   margin-bottom: 30px;
+}
+
+.social-impact * {
+  z-index: 1;
+}
+
+.social-impact svg {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 /* People Section  */

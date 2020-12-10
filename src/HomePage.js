@@ -62,7 +62,9 @@ const HomePage = () => {
                     <div className="social-impact-item">
                         <h1>151</h1>
                         <h2>Pisos alquilados</h2>
+
                     </div>
+
 
                     <div className="social-impact-item">
                         <h1>10.000</h1>
@@ -74,8 +76,11 @@ const HomePage = () => {
                         <h2>Familias ayudadas</h2>
                     </div>
                 </div>
+                <svg viewBox="0 0 1437 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M568.28 200.611C1270.67 219.897 1221.19 0.499859 1437 0.499878L1437 362.133L0 362.133C86.8187 339.203 124.525 188.427 568.28 200.611Z" fill="#6186AE"/>
+</svg>
             </section>
-        
+            
             <section className="container people">
                 <h1>Esto va de personas</h1>
                 <h2>Descubre como impactamos en la vida de Paco</h2>
@@ -92,6 +97,13 @@ const HomePage = () => {
                     <div className="col">
                         <img src={peopleBanner} alt="People Banner"/>
                     </div>
+                </div>
+            </section>
+            <section className="collaborators-container">
+                {/* <h2>Colaboradores</h2> */}
+                <div className="collaborators-logos">
+                
+
                 </div>
             </section>
         </div>

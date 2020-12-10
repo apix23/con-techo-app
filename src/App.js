@@ -2,13 +2,25 @@ import './App.css';
 import Header from './Components/Header';
 import HomePage from './HomePage';
 import AllComponents from './AllComponents';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Router className="App">
       <Header />
+      <Switch>
+      <Route exact path="/">
       <HomePage/>
-    </div>
+      </Route>
+      <Route path="/Components">
+      <AllComponents/>
+      </Route>
+      </Switch>
+    </Router>
   );
 }
 
