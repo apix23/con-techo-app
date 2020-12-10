@@ -132,6 +132,8 @@ const AllComponents = () => {
                 <p>&lt;Footer /&gt;</p>
                 <Footer />
             </div>
+
+            <br/>
         </div>
     )
 }
