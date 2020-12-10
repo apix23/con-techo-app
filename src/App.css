@@ -26,6 +26,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'DM sans', serif;
+  z-index: 1;
 }
 
 h1 {
@@ -195,6 +196,10 @@ select:focus {
   color: var(--dark-blue);
 }
 
+.checkmarks-card p {
+  text-align: left;
+}
+
 .checkmarks-card p img {
   margin-right: 10px;
 }
@@ -267,4 +272,176 @@ footer .icons-container i {
 hr {
   border-color: white;
   margin-bottom: 20px;
+}
+/*------------------- Home section -------------------*/
+
+
+.image-container{
+  background: url(./images/Hero.png);
+  width: 100%;
+  background-size: cover;
+  height: 32rem;
+  background-repeat: no-repeat;
+}
+
+.image-central-text{
+  margin-left: 7rem;
+}
+
+/* Information Section  */
+
+section.information-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5rem;
+}
+
+.section-paragraph{
+  margin-top: 1.5rem;
+}
+
+section.information-section h2, section.information-section h3{
+  text-align: center;
+}
+
+.search-menu{
+  background: #05518D;
+  height: 91px;
+  width: 793px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 29px;
+}
+.buy-rent-container{
+  display: flex;
+}
+
+.buy-rent-container button{
+  flex : 1;
+}
+
+.buy-rent-container button:first-child{
+  border-radius: 5px 0 0 5px;
+  border-right: 2px solid #000 ;
+  
+}
+
+.buy-rent-container button:last-child{
+  border-radius: 0 5px 5px 0;
+}
+
+.search-menu input{
+  height: 54px;
+  flex: 1;
+  border-radius: 5px;
+  border: none;
+  margin: 0 29px;
+  padding: 0 0 0 20px;
+}
+
+.search-menu input::placeholder {
+  color: black; 
+}
+
+.search-menu input:focus {
+  outline: none;
+}
+
+.search-menu button{
+  height: 54px;
+  width: 126px;
+  border: none;
+}
+
+.search-menu .btn-search {
+  border-radius: 5px;
+}
+
+.section-paragraph {
+  margin-bottom: 30px;
+}
+
+.section-paragraph strong {
+  border-bottom: 2px solid var(--orange)
+}
+
+.information-section h1 {
+  margin-top: 55px;
+}
+
+.information-section .cards-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 80px 0 100px 0;
+}
+
+/* Social Impact Section  */
+
+.social-impact {
+  background-color: var(--light-blue);
+  color: white;
+  text-align: center;
+  padding: 50px 0 55px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-impact-items-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-impact-items-container h1 {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.social-impact * {
+  z-index: 1;
+}
+
+.social-impact svg {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* People Section  */
+
+.container.people {
+  padding: 80px 0 0 0;
+}
+
+blockquote {
+  font-size: 25px;
+}
+
+blockquote:before {
+  color: var(--blue);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: var(--blue);
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.container.people .col:first-child {
+  display: flex;
+  align-items: center;
 }
