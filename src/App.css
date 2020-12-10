@@ -1,38 +1,406 @@
-.App {
-  text-align: center;
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------- Variables -------------------------------*/
+/*------------------------------------------------------------------------*/
+
+:root {
+  --dark-blue: #05518D;
+  --blue: #6186AE;
+  --light-blue: #6193BC;
+  --lighter-blue: #C0E0FF;
+
+
+  --orange: #EC6933;
+  --dark-orange: #CC5B2D;
+  --light-orange: #E7C4B5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*------------------------------------------------------------------------*/
+/*---------------------------- General Styles ----------------------------*/
+/*------------------------------------------------------------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM sans', serif;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 40px;
+  line-height: 52px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 25px;
+  line-height: 33px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.no-focus:hover {
+  outline: 0;
+  box-shadow: none;
+}
+
+/*------------------------------------------------------------------------*/
+/*-------------------------- General Components --------------------------*/
+/*------------------------------------------------------------------------*/
+
+
+/*------------- Outline Secondary Button -------------*/
+
+.btn-outline-secondary {
+  border: 2px solid var(--dark-blue);
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: var(--dark-blue);
+  padding: 0 24px;
+  height: 40px;
+  margin-right: 21px;
+  font-size: 20px;
+}
+
+.btn-outline-secondary:hover {
+  font-weight: bold;
+  background-color: var(--dark-blue);
+  color: white;
+  border-color: var(--dark-blue);
+}
+
+/*------------- Orange Secondary Button -------------*/
+
+.btn-secondary {
+  height: 40px;
+  padding: 0 30px;
+  background: var(--orange);
+  border: 2px solid var(--orange);
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--dark-orange);
+  border-color: var(--dark-orange);
+  font-weight: bold;
+}
+
+/*------------- Orange Secondary Button -------------*/
+
+.btn-primary {
+  background-color: var(--orange);
+  border-radius: 10px;
+  color: white;
+  border:none;
+}
+
+.btn-primary.big {
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-primary.small {
+  width: 200px;
+}
+.btn-primary:hover {
+  background-color: var(--dark-orange);
+}
+
+/*-------------  Pagination Buttons -------------*/
+
+.page-item {
+  width: 38px;
+  height: 38px;
+  margin: 0 5px;
+}
+
+.page-item.active .page-link {
+  background-color: #9ABBD2;
+  color: black;
+  border: 1px solid #9ABBD2;
+}
+
+
+.page-link {
+  border: 1px solid #9ABBD2;
+  font-size: 18px;
+  color: black;
+}
+
+.page-item:hover .page-link {
+  border: 1px solid #9ABBD2;
+  font-weight: bold; 
+  color: black;
+}
+
+
+/*-------------  Header -------------*/
+
+header {
+  background-color: var(--lighter-blue);
+}
+
+.header-logo {
+  height: 50px;
+}
+
+header .nav-link {
+  color: black;
+}
+
+
+/*-------------  Filter Items -------------*/
+
+select {
+  background-color: white;
+  border: 1px solid var(--orange);
+  color: var(--dark-orange);
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+select:hover {
+  background-color: var(--light-orange);
+}
+
+select:focus {
+  outline: none;
+}
+
+
+/*-------------  Checkmark cards -------------*/
+
+.checkmarks-card, .shadow-and-border-radius {
+  box-shadow: 1px 2px 15px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.checkmarks-card .card-title {
+  color: var(--dark-blue);
+}
+
+.checkmarks-card p {
+  text-align: left;
+}
+
+.checkmarks-card p img {
+  margin-right: 10px;
+}
+
+
+/*----------------- Contact Forms -----------------*/
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+}
+
+.contact-form .form-check label {
+  font-weight: bold;
+}
+
+.contact-form .form-group label {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-form input.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-form .alert-success {
+  color: #398714;
+  font-weight: bold;
+}
+
+.contact-form a {
+  font-weight: normal;
+  text-decoration: underline;
+  color: black;
+}
+
+/*------------------- Home section -------------------*/
+
+
+.image-container{
+  background: url(./images/Hero.png);
+  width: 100%;
+  background-size: cover;
+  height: 32rem;
+  background-repeat: no-repeat;
+}
+
+.image-central-text{
+  margin-left: 7rem;
+}
+
+/* Information Section  */
+
+section.information-section{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: -5rem;
+}
+
+.section-paragraph{
+  margin-top: 1.5rem;
+}
+
+section.information-section h2, section.information-section h3{
+  text-align: center;
+}
+
+.search-menu{
+  background: #05518D;
+  height: 91px;
+  width: 793px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 29px;
+}
+.buy-rent-container{
+  display: flex;
+}
+
+.buy-rent-container button{
+  flex : 1;
+}
+
+.buy-rent-container button:first-child{
+  border-radius: 5px 0 0 5px;
+  border-right: 2px solid #000 ;
+  
+}
+
+.buy-rent-container button:last-child{
+  border-radius: 0 5px 5px 0;
+}
+
+.search-menu input{
+  height: 54px;
+  flex: 1;
+  border-radius: 5px;
+  border: none;
+  margin: 0 29px;
+  padding: 0 0 0 20px;
+}
+
+.search-menu input::placeholder {
+  color: black; 
+}
+
+.search-menu input:focus {
+  outline: none;
+}
+
+.search-menu button{
+  height: 54px;
+  width: 126px;
+  border: none;
+}
+
+.search-menu .btn-search {
+  border-radius: 5px;
+}
+
+.section-paragraph {
+  margin-bottom: 30px;
+}
+
+.section-paragraph strong {
+  border-bottom: 2px solid var(--orange)
+}
+
+.information-section h1 {
+  margin-top: 55px;
+}
+
+.information-section .cards-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 80px 0 100px 0;
+}
+
+/* Social Impact Section  */
+
+.social-impact {
+  background-color: var(--light-blue);
   color: white;
+  text-align: center;
+  padding: 50px 0 55px 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.social-impact-items-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-impact-items-container h1 {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.social-impact * {
+  z-index: 1;
+}
+
+.social-impact svg {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* People Section  */
+
+.container.people {
+  padding: 80px 0 0 0;
+}
+
+blockquote {
+  font-size: 25px;
+}
+
+blockquote:before {
+  color: var(--blue);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: var(--blue);
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.container.people .col:first-child {
+  display: flex;
+  align-items: center;
 }
