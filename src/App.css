@@ -43,6 +43,14 @@ p {
   line-height: 22px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .no-focus:hover {
   outline: 0;
   box-shadow: none;
@@ -225,4 +233,38 @@ select:focus {
   font-weight: normal;
   text-decoration: underline;
   color: black;
+}
+
+/* Footer  */
+
+footer {
+  background-color: var(--blue);
+  color: white;
+  padding: 62px 0 40px 0;
+}
+
+footer .footer-container {
+  padding: 0 100px;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer .footer-elements .col > p:first-child{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer .icons-container i {
+  margin: 0 20px 1rem 0;
+}
+
+hr {
+  border-color: white;
+  margin-bottom: 20px;
 }
