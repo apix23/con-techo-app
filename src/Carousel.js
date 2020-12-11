@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// //import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
 import img from "../src/img/apartamentos-noluna.jpg";
 

@@ -12,11 +12,8 @@
     "react": "^17.0.1",
     "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^17.0.1",
-<<<<<<< HEAD
     "react-router-dom": "^5.2.0",
-=======
     "react-google-maps": "^9.4.5",
->>>>>>> b64e403b498a0328954a875c76fe2d0254f816e7
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
