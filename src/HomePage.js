@@ -1,6 +1,11 @@
 import React from 'react';
 import CheckmarksCard from './Components/CheckmarksCard';
-import peopleBanner from './images/carlos-20ruiz-16-0 1.png'
+import peopleBanner from './images/carlos-20ruiz-16-0 1.png';
+import PrimaryButton from './Components/PrimaryButton';
+import fundacioArrels from './images/fundacio-arrels.png';
+import fundacioLibre from './images/fundacio-libre.png';
+import ContactForm from './Components/ContactForm';
+import contactImage from './images/form-banner.png'
 
 const HomePage = () => {
     return (
@@ -99,12 +104,27 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+            <section className="carrusel-image-container">
+                <h2>Encuentra tu nuevo hogar</h2>
+                <PrimaryButton size="small" content="Ver todas las viviendas"/>
+            </section>
             <section className="collaborators-container">
-                {/* <h2>Colaboradores</h2> */}
+                <h2>Colaboradores</h2>
                 <div className="collaborators-logos">
-                
+                <img src={fundacioArrels} alt="Logo Fundacio Arrels" className="arrels"/>
+                <img src={fundacioLibre} alt="Logo Fundaio Mambre" className="mambre"/>
 
                 </div>
+            </section>
+            <section className="contact-container">
+                <aside>
+                <div className="contact-container-text">
+                <h2>¿Tienes alguna pregunta?</h2>
+                <p>Rellena el formulario y nos pondremos en <br/> contacto contigo lo antes posible.</p>
+                </div>
+                <img src={contactImage} alt=""/>
+                </aside>
+                <ContactForm/>
             </section>
         </div>
     )
