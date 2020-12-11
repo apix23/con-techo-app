@@ -203,6 +203,7 @@ select:focus {
   width: 100%;
   max-width: 400px;
   padding: 30px;
+  background-color: white;
 }
 
 .contact-form .form-check label {
@@ -403,4 +404,56 @@ blockquote:after {
 .container.people .col:first-child {
   display: flex;
   align-items: center;
+}
+section.carrusel-image-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.collaborators-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section h2{
+  padding: 30px 0;
+  text-align: center;
+}
+
+.collaborators-logos{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+img.arrels{
+width: 195px;
+}
+
+img.mambre{
+width: 274px;
+}
+
+section.contact-container{
+  background: rgba(231,243,255,0.5);
+
+}
+section.contact-container aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.contact-container-text img{
+  width : 288px;
 }
