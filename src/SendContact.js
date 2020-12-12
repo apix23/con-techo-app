@@ -2,6 +2,7 @@ import React from "react";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button } from "react-bootstrap";
 import "./App.css";
+import PrimaryButton from "./Components/PrimaryButton";
 
 const SendContact = () => (
   <>
@@ -14,9 +15,7 @@ const SendContact = () => (
             We'll never share your email with anyone else.
           </Form.Text>
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+        <PrimaryButton size="big" content="Enviar la solicitud"/>
       </Form>
     </div>
   </>

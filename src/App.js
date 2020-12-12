@@ -7,18 +7,22 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import ProductPage from './ProductPage';
 
 function App() {
   return (
     <Router className="App">
       <Header />
       <Switch>
-      <Route exact path="/">
-      <HomePage/>
-      </Route>
-      <Route path="/Components">
-      <AllComponents/>
-      </Route>
+        <Route exact path="/">
+          <HomePage/>
+        </Route>
+        <Route path="/Components">
+          <AllComponents/>
+        </Route>
+        <Route path="/Details">
+          <ProductPage/>
+        </Route>
       </Switch>
     </Router>
   );

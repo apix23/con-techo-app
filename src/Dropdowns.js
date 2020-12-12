@@ -2,18 +2,16 @@ import React from "react";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { Button } from "react-bootstrap";
 import "./App.css";
+import FilterItem from "./Components/FilterItem";
 
 const Dropdowns = () => (
-  <>
-    <Button variant="outline-primary">Primary</Button>{" "}
-    <Button variant="outline-secondary">Secondary</Button>{" "}
-    <Button variant="outline-success">Success</Button>{" "}
-    <Button variant="outline-warning">Warning</Button>{" "}
-    <Button variant="outline-danger">Danger</Button>{" "}
-    <Button variant="outline-info">Info</Button>{" "}
-    <Button variant="outline-light">Light</Button>{" "}
-    <Button variant="outline-dark">Dark</Button>
-  </>
+  <div className="row justify-content-around">
+    <FilterItem filterName="Barcelona" filterOptions={['Madrid', 'Sevilla']} />
+    <FilterItem filterName="Alquilar" filterOptions={[ 'Comprar']} />
+    <FilterItem filterName="Barcelona" filterOptions={['Barcelona','Madrid', 'Sevilla']} />
+    <FilterItem filterName="Barcelona" filterOptions={['Barcelona','Madrid', 'Sevilla']} />
+    
+  </div>
 );
 
 export default Dropdowns;
