@@ -3,6 +3,7 @@ import './AllComponents.css'
 import CheckmarksCard from './Components/CheckmarksCard'
 import ContactForm from './Components/ContactForm'
 import FilterItem from './Components/FilterItem'
+import Footer from './Components/Footer'
 import Header from './Components/Header'
 import Pagination from './Components/Pagination'
 import PrimaryButton from './Components/PrimaryButton'
@@ -124,6 +125,15 @@ const AllComponents = () => {
                 <p>&lt;ContactForm /&gt;</p>
                 <ContactForm />
             </div>
+            
+            {/* Footer */}
+            <div>
+                <h1>Footer:</h1>
+                <p>&lt;Footer /&gt;</p>
+                <Footer />
+            </div>
+
+            <br/>
         </div>
     )
 }

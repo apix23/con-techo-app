@@ -44,6 +44,14 @@ p {
   line-height: 22px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .no-focus:hover {
   outline: 0;
   box-shadow: none;
@@ -233,6 +241,39 @@ select:focus {
   color: black;
 }
 
+/* Footer  */
+
+footer {
+  background-color: var(--blue);
+  color: white;
+  padding: 62px 0 40px 0;
+}
+
+footer .footer-container {
+  padding: 0 100px;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+footer .footer-elements .col > p:first-child{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer .icons-container i {
+  margin: 0 20px 1rem 0;
+}
+
+hr {
+  border-color: white;
+  margin-bottom: 20px;
+}
 /*------------------- Home section -------------------*/
 
 
@@ -379,6 +420,10 @@ section.information-section h2, section.information-section h3{
   padding: 80px 0 0 0;
 }
 
+.container.people .row {
+  margin-top: 30px;
+}
+
 blockquote {
   font-size: 25px;
 }
@@ -404,6 +449,11 @@ blockquote:after {
 .container.people .col:first-child {
   display: flex;
   align-items: center;
+  background-color: #F1F8FF;
+  margin-right: -20px;
+}
+
+.container.people figure {
 }
 section.carrusel-image-container{
   display: flex;
