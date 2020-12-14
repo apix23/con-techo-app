@@ -1,31 +1,27 @@
-
-
 /*------------------------------------------------------------------------*/
 /*------------------------------- Variables -------------------------------*/
 /*------------------------------------------------------------------------*/
 
 :root {
-  --dark-blue: #05518D;
-  --blue: #6186AE;
-  --light-blue: #6193BC;
-  --lighter-blue: #C0E0FF;
+  --dark-blue: #05518d;
+  --blue: #6186ae;
+  --light-blue: #6193bc;
+  --lighter-blue: #c0e0ff;
 
-
-  --orange: #EC6933;
-  --dark-orange: #CC5B2D;
-  --light-orange: #E7C4B5;
+  --orange: #ec6933;
+  --dark-orange: #cc5b2d;
+  --light-orange: #e7c4b5;
 }
-
 
 /*------------------------------------------------------------------------*/
 /*---------------------------- General Styles ----------------------------*/
 /*------------------------------------------------------------------------*/
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'DM sans', serif;
+  font-family: "DM sans", serif;
   z-index: 1;
 }
 
@@ -52,7 +48,6 @@ p {
 /*------------------------------------------------------------------------*/
 /*-------------------------- General Components --------------------------*/
 /*------------------------------------------------------------------------*/
-
 
 /*------------- Outline Secondary Button -------------*/
 
@@ -99,7 +94,7 @@ p {
   background-color: var(--orange);
   border-radius: 10px;
   color: white;
-  border:none;
+  border: none;
 }
 
 .btn-primary.big {
@@ -124,24 +119,22 @@ p {
 }
 
 .page-item.active .page-link {
-  background-color: #9ABBD2;
+  background-color: #9abbd2;
   color: black;
-  border: 1px solid #9ABBD2;
+  border: 1px solid #9abbd2;
 }
 
-
 .page-link {
-  border: 1px solid #9ABBD2;
+  border: 1px solid #9abbd2;
   font-size: 18px;
   color: black;
 }
 
 .page-item:hover .page-link {
-  border: 1px solid #9ABBD2;
-  font-weight: bold; 
+  border: 1px solid #9abbd2;
+  font-weight: bold;
   color: black;
 }
-
 
 /*-------------  Header -------------*/
 
@@ -156,7 +149,6 @@ header {
 header .nav-link {
   color: black;
 }
-
 
 /*-------------  Filter Items -------------*/
 
@@ -176,10 +168,10 @@ select:focus {
   outline: none;
 }
 
-
 /*-------------  Checkmark cards -------------*/
 
-.checkmarks-card, .shadow-and-border-radius {
+.checkmarks-card,
+.shadow-and-border-radius {
   box-shadow: 1px 2px 15px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -195,7 +187,6 @@ select:focus {
 .checkmarks-card p img {
   margin-right: 10px;
 }
-
 
 /*----------------- Contact Forms -----------------*/
 
@@ -235,8 +226,7 @@ select:focus {
 
 /*------------------- Home section -------------------*/
 
-
-.image-container{
+.image-container {
   background: url(./images/Hero.png);
   width: 100%;
   background-size: cover;
@@ -244,29 +234,30 @@ select:focus {
   background-repeat: no-repeat;
 }
 
-.image-central-text{
+.image-central-text {
   margin-left: 7rem;
 }
 
 /* Information Section  */
 
-section.information-section{
+section.information-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: -5rem;
 }
 
-.section-paragraph{
+.section-paragraph {
   margin-top: 1.5rem;
 }
 
-section.information-section h2, section.information-section h3{
+section.information-section h2,
+section.information-section h3 {
   text-align: center;
 }
 
-.search-menu{
-  background: #05518D;
+.search-menu {
+  background: #05518d;
   height: 91px;
   width: 793px;
   border-radius: 5px;
@@ -275,25 +266,24 @@ section.information-section h2, section.information-section h3{
   align-items: center;
   padding: 0 29px;
 }
-.buy-rent-container{
+.buy-rent-container {
   display: flex;
 }
 
-.buy-rent-container button{
-  flex : 1;
+.buy-rent-container button {
+  flex: 1;
 }
 
-.buy-rent-container button:first-child{
+.buy-rent-container button:first-child {
   border-radius: 5px 0 0 5px;
-  border-right: 2px solid #000 ;
-  
+  border-right: 2px solid #000;
 }
 
-.buy-rent-container button:last-child{
+.buy-rent-container button:last-child {
   border-radius: 0 5px 5px 0;
 }
 
-.search-menu input{
+.search-menu input {
   height: 54px;
   flex: 1;
   border-radius: 5px;
@@ -303,14 +293,14 @@ section.information-section h2, section.information-section h3{
 }
 
 .search-menu input::placeholder {
-  color: black; 
+  color: black;
 }
 
 .search-menu input:focus {
   outline: none;
 }
 
-.search-menu button{
+.search-menu button {
   height: 54px;
   width: 126px;
   border: none;
@@ -325,7 +315,7 @@ section.information-section h2, section.information-section h3{
 }
 
 .section-paragraph strong {
-  border-bottom: 2px solid var(--orange)
+  border-bottom: 2px solid var(--orange);
 }
 
 .information-section h1 {
@@ -405,57 +395,56 @@ blockquote:after {
   display: flex;
   align-items: center;
 }
-section.carrusel-image-container{
+section.carrusel-image-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.collaborators-container{
+.collaborators-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-section.contact-container{
+section.contact-container {
   display: flex;
   justify-content: space-evenly;
 }
 
-section h2{
+section h2 {
   padding: 30px 0;
   text-align: center;
 }
 
-.collaborators-logos{
+.collaborators-logos {
   width: 500px;
   display: flex;
   justify-content: space-between;
 }
 
-img.arrels{
-width: 195px;
+img.arrels {
+  width: 195px;
 }
 
-img.mambre{
-width: 274px;
+img.mambre {
+  width: 274px;
 }
 
-section.contact-container{
-  background: rgba(231,243,255,0.5);
-
+section.contact-container {
+  background: rgba(231, 243, 255, 0.5);
 }
-section.contact-container aside{
+section.contact-container aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-div.contact-container-text img{
-  width : 288px;
+div.contact-container-text img {
+  width: 288px;
 }
 .contact-us-button {
   border: 2px solid #05518d;
@@ -481,7 +470,7 @@ nav {
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
 }
-.carousel-inner {
+/* .carousel-inner {
   height: 900px;
   width: 900px;
   border-radius: 0px;
@@ -489,19 +478,31 @@ nav {
   margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+} */
+.carousel-inner img {
+  width: 800px;
+  height: 500px;
+}
+
+.carousel-inner {
+  height: 500px;
+  width: 800px;
 }
 
 .estiloP {
   text-align: left;
 }
-
+.derecha {
+  float: right;
+}
+/* 
 .MostLittle {
   width: 300px;
   height: 300px;
   border: 1px solid black;
   float: right;
   margin-top: 200px;
-}
+} */
 
 /* border: 1px solid black;
   float: left;
