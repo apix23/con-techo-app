@@ -8,18 +8,24 @@ import {
   Route,
 } from "react-router-dom";
 import Footer from './Components/Footer';
+import AboutUs from './AboutUs';
 
 function App() {
   return (
     <Router className="App">
       <Header />
       <Switch>
-      <Route exact path="/">
-      <HomePage/>
-      </Route>
-      <Route path="/Components">
-      <AllComponents/>
-      </Route>
+        <Route exact path="/">
+          <HomePage/>
+        </Route>
+
+        <Route path="/Components">
+          <AllComponents/>
+        </Route>
+
+        <Route path="/AboutUs">
+          <AboutUs/>
+        </Route>
       </Switch>
       <Footer />
     </Router>
