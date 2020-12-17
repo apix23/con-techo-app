@@ -5,7 +5,7 @@ import PrimaryButton from './Components/PrimaryButton';
 import fundacioArrels from './images/fundacio-arrels.png';
 import fundacioLibre from './images/fundacio-libre.png';
 import ContactForm from './Components/ContactForm';
-import contactImage from './images/form-banner.png'
+import ContactSection from './Components/ContactSection';
 
 const HomePage = () => {
     return (
@@ -82,8 +82,8 @@ const HomePage = () => {
                     </div>
                 </div>
                 <svg viewBox="0 0 1437 363" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M568.28 200.611C1270.67 219.897 1221.19 0.499859 1437 0.499878L1437 362.133L0 362.133C86.8187 339.203 124.525 188.427 568.28 200.611Z" fill="#6186AE"/>
-</svg>
+                    <path d="M568.28 200.611C1270.67 219.897 1221.19 0.499859 1437 0.499878L1437 362.133L0 362.133C86.8187 339.203 124.525 188.427 568.28 200.611Z" fill="#6186AE"/>
+                </svg>
             </section>
             
             <section className="container people">
@@ -108,24 +108,17 @@ const HomePage = () => {
                 <h2>Encuentra tu nuevo hogar</h2>
                 <PrimaryButton size="small" content="Ver todas las viviendas"/>
             </section>
+            
             <section className="collaborators-container">
                 <h2>Colaboradores</h2>
                 <div className="collaborators-logos">
                 <img src={fundacioArrels} alt="Logo Fundacio Arrels" className="arrels"/>
-                <img src={fundacioLibre} alt="Logo Fundaio Mambre" className="mambre"/>
+                <img src={fundacioLibre} alt="Logo Fundacio Mambre" className="mambre"/>
 
                 </div>
             </section>
-            <section className="contact-container">
-                <aside>
-                <div className="contact-container-text">
-                <h2>¿Tienes alguna pregunta?</h2>
-                <p>Rellena el formulario y nos pondremos en <br/> contacto contigo lo antes posible.</p>
-                </div>
-                <img src={contactImage} alt=""/>
-                </aside>
-                <ContactForm/>
-            </section>
+
+            <ContactSection />
         </div>
     )
 }

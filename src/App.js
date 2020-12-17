@@ -9,23 +9,25 @@ import {
 } from "react-router-dom";
 import Footer from './Components/Footer';
 import AboutUs from './AboutUs';
+import SocialCalculator from './SocialCalculator';
 
 function App() {
   return (
     <Router className="App">
       <Header />
       <Switch>
-        <Route exact path="/">
-          <HomePage/>
-        </Route>
-
-        <Route path="/Components">
-          <AllComponents/>
-        </Route>
-
-        <Route path="/AboutUs">
+      <Route exact path="/">
+      <HomePage/>
+      </Route>
+      <Route path="/Components">
+      <AllComponents/>
+      </Route>
+      <Route path="/AboutUs">
           <AboutUs/>
         </Route>
+      <Route path="/Calculadora-social">
+      <SocialCalculator/>
+      </Route>
       </Switch>
       <Footer />
     </Router>
