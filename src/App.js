@@ -8,6 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 import Footer from './Components/Footer';
+import SocialCalculator from './SocialCalculator';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       </Route>
       <Route path="/Components">
       <AllComponents/>
+      </Route>
+      <Route path="/Calculadora-social">
+      <SocialCalculator/>
       </Route>
       </Switch>
       <Footer />
