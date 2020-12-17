@@ -9,6 +9,8 @@
   --blue: #6186AE;
   --light-blue: #6193BC;
   --lighter-blue: #C0E0FF;
+  --values-blue-bg: #E7F3FF;
+
 
 
   --orange: #EC6933;
@@ -453,7 +455,36 @@ blockquote:after {
   margin-right: -20px;
 }
 
-.container.people figure {
+/* About us */
+
+.about-us .description {
+  padding: 70px 0 0 0;
+}
+
+.about-us .description p {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+/* Values container  */
+
+.values-container {
+  background-color: var(--values-blue-bg);
+  padding: 100px 0;
+}
+
+.values-container h1 {
+  margin-bottom: 100px;
+}
+
+.value-items-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.value-item {
+  margin: 0 25px;
 }
 section.carrusel-image-container{
   display: flex;
@@ -506,4 +537,33 @@ section.contact-container aside{
 
 div.contact-container-text img{
   width : 288px;
+}
+
+.values-container .value-item {
+  width: 100%;
+  max-width: 360px;
+}
+
+.values-container .value-item img {
+  width: 52px;
+  height: fit-content;
+}
+
+/* Our Ecosystem */
+
+.ecosystem-container {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecosystem-container h1 {
+  margin-bottom: 30px;
+}
+
+.ecosystem-container img {
+  width: 90%;
+  max-width: 700px;
+  margin-top: 70px;
 }
