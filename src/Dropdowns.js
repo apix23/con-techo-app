@@ -5,7 +5,7 @@ import "./App.css";
 import FilterItem from "./Components/FilterItem";
 
 const Dropdowns = () => (
-  <div className="row justify-content-around">
+  <div class="btn-group">
     <FilterItem filterName="Barcelona" filterOptions={["Madrid", "Sevilla"]} />
     <FilterItem filterName="Alquilar" filterOptions={["Comprar"]} />
     <FilterItem

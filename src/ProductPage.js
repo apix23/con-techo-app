@@ -1,6 +1,5 @@
 import React from "react";
 import Dropdowns from "./Dropdowns";
-import SendContact from "./SendContact";
 import Carousel from "./Carousel";
 import ShortDescription from "./ShortDescription";
 import Description from "./Description";
@@ -15,7 +14,6 @@ const ProductPage = () => {
   return (
     <div>
       <Dropdowns />
-      <SendContact />
       <Carousel />
       <ShortDescription />
       <SocialCalculatorButton />

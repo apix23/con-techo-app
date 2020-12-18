@@ -479,22 +479,20 @@ nav {
   margin-top: 0px;
   margin-bottom: 0px;
 } */
-.carousel-inner img {
+/* .carousel-inner img {
   width: 800px;
   height: 500px;
 }
 
 .carousel-inner {
   height: 500px;
-  width: 800px;
-}
+  width: 900px;
+} */
 
 .estiloP {
   text-align: left;
 }
-.derecha {
-  float: right;
-}
+
 /* 
 .MostLittle {
   width: 300px;
