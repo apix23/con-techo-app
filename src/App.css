@@ -470,6 +470,15 @@ nav {
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
 }
+
+.button-container {
+  padding-left: 30px;
+}
+
+.button-container-left {
+  justify-content: space-between;
+  width: 660px;
+}
 /* .carousel-inner {
   height: 900px;
   width: 900px;
@@ -488,10 +497,6 @@ nav {
   height: 500px;
   width: 900px;
 } */
-
-.estiloP {
-  text-align: left;
-}
 
 /* 
 .MostLittle {

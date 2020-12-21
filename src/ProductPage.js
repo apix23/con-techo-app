@@ -13,19 +13,29 @@ const ProductPage = () => {
 
   return (
     <div>
-      <Dropdowns />
-      <Carousel />
-      <ShortDescription />
-      <SocialCalculatorButton />
-      <Description />
-      <Characteristic />
-      <div>
-        <Maps
-          googleMapURL={mapURL}
-          containerElement={<div style={{ height: "350px", width: "600px" }} />}
-          mapElement={<div style={{ height: "100%" }} />}
-          loadingElement={<p>cargando</p>}
-        />
+      <div className="container">
+        <div className="row">
+          <Dropdowns />
+          <Carousel />
+        </div>
+        <div className="row">
+          <div className="col-sm-7">
+            <ShortDescription />
+            <SocialCalculatorButton />
+            <Description />
+            <Characteristic />
+            <div>
+              <Maps
+                googleMapURL={mapURL}
+                containerElement={
+                  <div style={{ height: "350px", width: "600px" }} />
+                }
+                mapElement={<div style={{ height: "100%" }} />}
+                loadingElement={<p>cargando</p>}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
