@@ -4,7 +4,7 @@ import React from "react";
 import "./App.css";
 
 const Description = () => (
-  <>
+  <div className="mt-3 mb-3">
     <h1>Descripción</h1>
     <p>
       Contrary to popular belief, Lorem Ipsum is not simply random text. It{" "}
@@ -27,6 +27,6 @@ const Description = () => (
       English
       <br></br>versions from the 1914 translation by H. Rackham.
     </p>
-  </>
+  </div>
 );
 export default Description;

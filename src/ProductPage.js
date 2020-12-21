@@ -7,7 +7,6 @@ import Characteristic from "./Characteristic";
 import Maps from "./Maps";
 import credentials from "./credentials";
 import SocialCalculatorButton from "./SocialCalculatorButton";
-
 const ProductPage = () => {
   const mapURL = `https://maps.googleapis.com/maps/api/js?v=3.exp&key=${credentials.mapsKey}`;
 

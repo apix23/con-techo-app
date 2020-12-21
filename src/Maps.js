@@ -7,8 +7,8 @@ const Map = (props) => {
       <div class="row">
         <h1>
           <strong>Ubicación</strong>
+          <p>Sagrada familia, Calle Aragó</p>
         </h1>
-        <p>Sagrada familia, Calle Aragó</p>
         <div>
           <GoogleMap
             defaultZoom={10}

@@ -3,7 +3,7 @@ import "./App.css";
 
 const characteristic = () => (
   <div>
-    <div class="container mt-2 mb-2">
+    <div class="container mt-3 mb-3">
       <h2>Caracteristicas</h2>
 
       <div class="row">
