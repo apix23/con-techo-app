@@ -24,4 +24,6 @@ yarn-error.log*git
 yarn-error.log*
 
 /.eslintcache
+eslintcache
 .eslintcache
+./eslintcache
