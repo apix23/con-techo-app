@@ -715,3 +715,17 @@ div.tramits-partner-social{
 
 
 /*Calculadora Social*/
+.ecosystem-container {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us .description img {
+  width: 100%
+}
+
+.about-us .row {
+  width: 100%;
+}

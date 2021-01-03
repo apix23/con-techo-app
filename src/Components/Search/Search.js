@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
-import Contact from "../../Components/Contact";
+import ContactSection from "../ContactSection";
 import Cards from "./Cards";
 
 const Search = () => {
   return (
     <Fragment>
       <Cards />
-      <Contact />
+      <ContactSection/>
     </Fragment>
   );
 };
