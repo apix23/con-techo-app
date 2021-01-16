@@ -43,7 +43,7 @@ function SocialCalculator() {
                         a personas sin hogar. </p>
                     </div>
                 </div>
-                <h2>Cómo inpacta el porcentaje</h2>
+                <h2>Cómo impacta el porcentaje</h2>
                 <div className="grafics-container">
 
                 </div>
