@@ -6,14 +6,19 @@ import fundacioArrels from './images/fundacio-arrels.png';
 import fundacioLibre from './images/fundacio-libre.png';
 import ContactForm from './Components/ContactForm';
 import ContactSection from './Components/ContactSection';
+import { Link} from 'react-router-dom';
 
 const HomePage = () => {
+    const searchFuntion = () =>{
+        ;
+    }
     return (
         <div className="home-page">
 
             <div className="jumbotron image-container">
                 <div className="image-central-text">
                 <p>ConTecho</p>
+                
                 <h1 className="display-4 ">Inmobiliaria con <br/> impacto social</h1>
 
                 </div>
@@ -26,7 +31,7 @@ const HomePage = () => {
                         <button>Alquilar</button>
                     </div>
                     <input type="text" placeholder="Localidad"/>
-                    <button className="btn-search">Buscar</button>
+                    <Link to="search"><button className="btn-search" onClick={searchFuntion}>Buscar</button></Link>
                 </div>
                 <h2 className="section-paragraph">Desde ConTecho queremos que <strong>nuestro proyecto</strong> tenga un impacto en la <br/> sociedad y en la calidad de vida de las personas más desfavorecidas</h2>
                 

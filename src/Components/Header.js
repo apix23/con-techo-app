@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../images/header-logo.png";
 import OutlineButton from "./SecondaryOutlineButton";
 import OrangeSecondaryButton from "./SecondaryOrangeButton";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -24,7 +25,7 @@ const Header = () => {
           id="navbarNav"
         >
           <a class="navbar-brand" href="#">
-            <img src={logo} className="header-logo" alt="ConTecho logo" />
+            <Link to="/"><img src={logo} className="header-logo" alt="ConTecho logo" /></Link>
           </a>
 
           <ul class="navbar-nav">
@@ -34,14 +35,14 @@ const Header = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/AboutUs">
                 Quiénes Somos
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="Calculadora-social">
                 Calculadora social
-              </a>
+              </Link>
             </li>
           </ul>
 
