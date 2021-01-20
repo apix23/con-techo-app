@@ -74,7 +74,7 @@ const Cards = () => {
               filterOptions={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
             />
           </div>
-          <div className="my-0 mr-2 ml-auto">
+          <div className="my-0 ml-auto">
             <FilterItem
               filterName={"Ordenar por"}
               filterOptions={["Localización", "Tipo", "Precio", "Habitaciones"]}
